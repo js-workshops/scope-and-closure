@@ -1,2 +1,2 @@
 # intermediate-javascript
-Intermediate JavaScript and jQuery (GA Course)
+Exercise files for my Intermediate JavaScript and jQuery workshop at General Assembly.
