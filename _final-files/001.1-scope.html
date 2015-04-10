@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scope</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="message">Scope</h1>
+                    <p class="lead">Let's test out function scope! Complete steps 1 and 2, and we'll walk through the rest together.</p>
+                </div>
+                <div class="col-lg-12">
+                    <blockquote>
+                      <p>Every variable defined in a function, is available for the entirety of that function.</p>
+                    </blockquote>
+                    
+                    <ol>
+                        <li>Open <kbd>js/001.1-scope.js</kbd> in Sublime Text.</li>
+                        <li>Add a variable inside the function <code>testFunctionScope</code> on line 5. Name it whatever you like, and set it to one of the available <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" target="_blank">data types</a>.</li>
+                        <li>Uncomment the debugger statements on line 6.</li>
+                        <li>Make sure your developer tools are open in Chrome, and refresh the page.</li>
+                        <li>The page should stop executing JavaScript when it reaches that <code>dubugger</code> statement. You can open the console by clicking the drawer icon:
+                            <ul>
+                                <li><img style="margin-right: 20px;" src="img/chrome-icons.png" /> (blue icon on the left)</li>
+                            </ul>
+                        </li>
+                        <li>Your console is now inside the the <code>testFunctionScope</code> function - frozen in time. Try accessing the variables inside that function.</li>
+                        <li>Uncomment the debugger statement on line 10. Try accessing the variables before the function call, then continue to the debugger statement inside the function.</li>
+                        <li>Uncomment the debugger statement on line 12. Try accessing the variables after the function call.</li>
+                    </ol>
+                </div>
+                <div class="col-lg-12 text-center footer">
+                    <ul class="list-unstyled">
+                        <li><a href="002-variables.html">Next >></a></li>
+                        <li>Intermediate JavaScript & jQuery - <a href="https://twitter.com/ev_blurbs">Evan Johnson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+        <script src="js/001.1-scope.js"></script>
+    </body>
+</html>
