@@ -1,5 +1,5 @@
 (function instaSearchView() {
-  instasearch.view = function() {
+  instasearch.view = function(resultsArray) {
 
     // this is a sample object
     // that the instagram API

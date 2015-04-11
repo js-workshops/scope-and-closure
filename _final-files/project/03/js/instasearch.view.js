@@ -26,10 +26,10 @@
       return resultHTML;
     }
 
-    var results = formatResults(sampleArray);
+    var results = formatResults(resultsArray);
     $("#searchResults").html(results);
 
   };
 
-  instasearch.view();
+
 })();

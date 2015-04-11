@@ -51,3 +51,36 @@ fruit[1];       // "banana"
 fruit[3];       // undefined
 
 fruit.length;   // 3
+
+{
+  "key": "value",
+  "objectKey": {
+    "key1": "objectValue1",
+    "key2": "objectValue2"
+  },
+  "arrayKey": [
+    {
+      "arrayKey": "arrayValue1"
+    },
+    "arrayValue2"
+  ]
+}
+
+data.key;                   // "value"
+data.objectKey.key2;        // "objectValue2"
+data.arrayKey[0].arrayKey;  // "arrayValue1"
+data.arrayKey[1];           // "arrayValue2"
+
+
+$.get(url, function(jsonData) {
+  // do something with our
+  // our jsonData here
+}, "jsonp");
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="message">Lab: InstaSearch</h1>
+                    <p class="lead"><strong>Phase 3:</strong> Let's stop using mock data, and fetch some real data via AJAX!</p>
+                </div>
+                <div class="col-lg-12">
+                    <p><a type="button" class="btn btn-primary btn-lg" href="project/instasearch.html" target="_blank">InstaSearch</a><a type="button" class="btn btn-default btn-lg" href="_final-files/project/02.zip">Starter Code</a></p>
+                    <h3>AJAX Get Syntax:</h3>
+                    <pre>
+$.get(url, function(jsonData) {
+  // do something with our
+  // our jsonData here
+}, "jsonp");</pre>
+
+                    <br /><br />
+                    
+                    <ol>
+                        <li>Open <kbd>project/js/instasearch.model.js</kbd> in Sublime Text.</li>
+                        <li>Create a local variable names <code>url</code> and assign it to the result of the <code>instagramEndpoint</code> function on line 11.</li>
+                        <li>Add your AJAX function, using the <code>$.get()</code> method on line 13. Inside the success callback, call <code>handleResults</code> with your data as it's parameter.
+                            <ul>
+                                <li>Make sure you are passing just the array of images, and not the whole object:
+                                <pre>handleResults(jsonData.data);</pre></li>
+                            </ul>
+                        </li>
+                        <li>Inside the <code>handleResults</code> function, let's invoke our view functions by adding the line:
+                        <pre>instasearch.view(dataArray);</pre></li>
+                        <li>Let's stop calling the view functions manually:
+                            <ol>
+                                <li>Open <kbd>project/js/instasearch.view.js</kbd> in Sublime Text.</li>
+                                <li>Delete line 34 which invokes the view function:
+                                <pre>instasearch.view();</pre></li>
+                                <li>Delete the <code>sampleArray</code> declaration.</li>
+                                <li>Replace any references to <code>sampleArray</code> with <code>resultsArray</code> - the parameter passed into the <code>instasearch.view</code> function.</li>
+                            </ol>
+                        </li>
+                        <li>Let's test our model and view functions! Below the comment <var>// add your test search here</var>, call the <code>fetchData</code> function with a tag you want to search for:
+                        <pre>fetchData('puppy');</pre></li>
+                    </ol>
+
+                </div>
+                <div class="col-lg-12 text-center footer">
+                    <ul class="list-unstyled">
+                        <li><a href="006-lab.html"><< Prev</a> | <a href="008-lab.html">Next >></a></li>
+                        <li>Intermediate JavaScript & jQuery - <a href="https://twitter.com/ev_blurbs">Evan Johnson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+    </body>
+</html>

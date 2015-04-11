@@ -1,9 +1,6 @@
 (function instaSearchView() {
   instasearch.view = function(resultsArray) {
 
-    // this is a sample array
-    var sampleArray = [{images:{low_resolution:{url:"https://2vyk4sqq0.igsonar.com/hphotos-ak-xaf1/t51.2885-15/s306x306/e15/11093074_423356687833105_1178379884_n.jpg",width:306,height:306},thumbnail:{url:"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11093074_423356687833105_1178379884_n.jpg",width:150,height:150},standard_resolution:{url:"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11093074_423356687833105_1178379884_n.jpg",width:640,height:640}}},{images:{low_resolution:{url:"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s306x306/e15/11111283_853666244722658_1067200035_n.jpg",width:306,height:306},thumbnail:{url:"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s150x150/e15/11111283_853666244722658_1067200035_n.jpg",width:150,height:150},standard_resolution:{url:"https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/e15/11111283_853666244722658_1067200035_n.jpg",width:640,height:640}}}];
-
     function formatResults(dataArray) {
       var resultHTML = '';
       
@@ -26,10 +23,10 @@
       return resultHTML;
     }
 
-    var results = formatResults(sampleArray);
+    var results = formatResults(resultsArray);
     $("#searchResults").html(results);
 
   };
 
-  instasearch.view();
+
 })();

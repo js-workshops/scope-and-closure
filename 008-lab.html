@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="message">Lab: InstaSearch</h1>
+                    <p class="lead"><strong>Phase 4:</strong> Lastly, let's hook everything up with some jQuery events.</p>
+                </div>
+                <div class="col-lg-12">
+                    <p><a type="button" class="btn btn-primary btn-lg" href="project/instasearch.html" target="_blank">InstaSearch</a><a type="button" class="btn btn-default btn-lg" href="_final-files/project/03.zip">Starter Code</a></p>
+
+                    <br /><br />
+                    
+                    <ol>
+                        <li>Open <kbd>project/js/instasearch.controller.js</kbd> in Sublime Text.</li>
+                        <li> At the bottom of the IIFE, on line 10, invoke the controller with the line below only once the <var>document</var> is <a href="http://learn.jquery.com/using-jquery-core/document-ready/" target="_blank">ready</a>:
+                        <pre>instasearch.controller();</pre></li>
+                        <li>On line 6, bind a <a href="https://api.jquery.com/submit/" target="_blank">submit</a> event on the form.
+                            <ul>
+                                <li>Search the HTML for a selector (ID or Class) on the form you can use to select the <var>form</var> element.</li>
+                                <li>Make sure to pass in the <var>event</var> object, and run <code>preventDefault()</code> on it. Look at the jQuery documentation for examples. This prevents the page from refreshing.</li>
+                            </ul>
+                        </li>
+                        <li>Assign the <a href="https://api.jquery.com/val/" target="_blank">value</a> of the field to a local variable inside the <code>submit</code> success callback.
+                            <ul>
+                                <li>Search the HTMl for a selector (ID or Class) on the search field to select the <var>input</var> element.</li>
+                            </ul>
+                        </li>
+                        <li>Check if the local variable has a value:
+                        <pre>if(myVariable.length) { }</pre></li>
+                        <li>Inside the if condition (if the check passed), let's invoke the model with the search term:
+                        <pre>instasearch.model(searchTerm);</pre></li>
+                        <li>Let's cleanup the <kbd>project/js/instasearch.model.js</kbd>:
+                            <ol>
+                                <li>At the bottom of the <code>instasearch.model</code> function, look for our test search. Replace it with:
+                                <pre>fetchData(tag);</pre></li>
+                                <li>The <var>tag</var> variable is passed into the <code>instasearch.model</code> function on line 2.</li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                </div>
+                <div class="col-lg-12 text-center footer">
+                    <ul class="list-unstyled">
+                        <li><a href="007-lab.html"><< Prev</a> | <a href="008-lab.html">Next >></a></li>
+                        <li>Intermediate JavaScript & jQuery - <a href="https://twitter.com/ev_blurbs">Evan Johnson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+    </body>
+</html>
