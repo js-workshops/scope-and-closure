@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scope</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="message">Global Scope</h1>
+                    <p class="lead">Let's play with Global Scope one more time.</p>
+                </div>
+                <div class="col-lg-12">
+                    <blockquote>
+                      <p>Fool me once, shame on you. Fool me twice, shame on me.</p>
+                    </blockquote>
+                    
+                    <ol>
+                        <li>Open <kbd>js/001.3-scope.js</kbd> in Sublime Text.</li>
+                        <li>On line 7, assign the the global variable <code>name</code> to the parameter <code>workshopName</code>.</li>
+                        <li>On line 17, assign the the global variable <code>name</code> to the parameter <code>studentName</code>.</li>
+                        <li>In the console, set the student name using the <code>setStudentName</code> function of the <code>student</code> object:
+                        <pre>student.setStudentName(&lt;your name&gt;);</pre></li>
+                        <li>In the console, log the student name using the <code>logStudentName</code> function of the <code>student</code> object:
+                        <pre>student.logStudentName();</pre></li>
+                        <li>In the console, set the workshop name using the <code>setWorkshopName</code> function of the <code>workshop</code> object:
+                        <pre>workshop.setWorkshopName("Intermediate JavaScript & jQuery");</pre></li>
+                        <li>In the console, log the workshop name using the <code>logWorkshopName</code> function of the <code>workshop</code> object:
+                        <pre>workshop.logWorkshopName();</pre></li>
+                        <li>In the console, try to log the student name again by repeating step 5.</li>
+                    </ol>
+                </div>
+                <div class="col-lg-12 text-center footer">
+                    <ul class="list-unstyled">
+                        <li><a href="001.2-scope.html"><< Prev</a> | <a href="001.4-scope.html">Next >></a></li>
+                        <li>Intermediate JavaScript & jQuery - <a href="https://twitter.com/ev_blurbs">Evan Johnson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+        <script src="js/001.3-scope.js"></script>
+    </body>
+</html>
