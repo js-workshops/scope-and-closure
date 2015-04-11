@@ -5,3 +5,7 @@
 .img-container {
   height: 500px;
 }
+
+pre {
+  margin-top: 10px;
+}

@@ -4,3 +4,17 @@ var myFunction = function() {
 };
 
 console.log(workshop);      // ReferenceError: workshop is not defined
+
+var location = null;        // global variable
+
+var myFunction = function() {
+  var location = null;      // local variable to the myFunction scope
+};
+
+var location = null;        // global variable
+
+var myFunction = function() {
+  location = null;          // global variable
+};
+
+
