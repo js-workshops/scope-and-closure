@@ -25,3 +25,20 @@ var myFunction = function() {
 var workshop = "Intermediate JavaScript & jQuery";        // global variable set to the window object
 
 
+function foo() {
+  var a = 1;                // local variable set to the scope of foo()
+  function bar() {
+    var a = 2;              // local variable set to the scope of bar()
+  }
+  bar();
+}
+foo();
+
+function foo() {
+  var a = 1;                // local variable set to the scope of foo()
+  function bar() {
+    a = 2;                  // local variable set to the scope of foo()
+  }
+  bar();
+}
+foo();

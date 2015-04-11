@@ -9,3 +9,4 @@ Exercise files for my Intermediate JavaScript and jQuery workshop at General Ass
   * **Global Variable:** A variable defined at the Global Scope.
 * **IIFE:** Imediatly-Invoked Function Expression - a function wrapped in `()` to create an expression, and immediatly followed by a pair of `()` to invoke that function imediatly.
 * **Closure:** "Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created." - MDN
+  * **Variable Shadowing:** "occurs when a variable declared within a certain scope ... has the same name as a variable declared in an outer scope." - Wikipedia
