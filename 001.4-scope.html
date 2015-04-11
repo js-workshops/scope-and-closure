@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scope</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="message">IIFE</h1>
+                    <p class="lead">What's the difference between an IIFE and a normal function expresion?</p>
+                </div>
+                <div class="col-lg-12">
+                    <blockquote>
+                      <p>IIFE: Imediatly-Invoked Function Expression</p>
+                    </blockquote>
+                    
+                    <ol>
+                        <li>Open <kbd>js/001.4-scope.js</kbd> in Sublime Text.</li>
+                        <li>Add a console log statment to the IIFE on line 3:</li>
+                        <pre>console.log("your log statement here");</pre></li>
+                        <li>Add a different console log statement to the <code>nonIIFE</code> function on line 8.</li>
+                        <li>Open the console and notice which statement is logged.</li>
+                        <li>Invoke the <code>nonIIFE</code> function to have your second statement logged:
+                        <pre>nonIFFE();</pre></li>
+                    </ol>
+                </div>
+                <div class="col-lg-12 text-center footer">
+                    <ul class="list-unstyled">
+                        <li><a href="001.3-scope.html"><< Prev</a> | <a href="001.5-scope.html">Next >></a></li>
+                        <li>Intermediate JavaScript & jQuery - <a href="https://twitter.com/ev_blurbs">Evan Johnson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+        <script src="js/001.4-scope.js"></script>
+    </body>
+</html>

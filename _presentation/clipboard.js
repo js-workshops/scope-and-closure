@@ -18,3 +18,10 @@ var myFunction = function() {
 };
 
 
+(function IIFE() {
+  var workshop = "Intermediate JavaScript & jQuery";      // local variable to the IIFE function scope
+})();
+
+var workshop = "Intermediate JavaScript & jQuery";        // global variable set to the window object
+
+
