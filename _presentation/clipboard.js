@@ -42,3 +42,12 @@ function foo() {
   bar();
 }
 foo();
+
+var fruit = ["apple", "banana", "grape"];
+
+fruit[0];       // "apple"
+fruit[2];       // "grape"
+fruit[1];       // "banana"
+fruit[3];       // undefined
+
+fruit.length;   // 3

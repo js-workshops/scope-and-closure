@@ -15,3 +15,4 @@ Exercise files for my Intermediate JavaScript and jQuery workshop at General Ass
   * **condition:** “An expression to be evaluated before each loop iteration. If this expression evaluates to true, statement is executed. This conditional test is optional. If omitted, the condition always evaluates to true. If the expression evaluates to false, execution skips to the first expression following the for construct.” - MDN
   * **final-expression:** “An expression to be evaluated at the end of each loop iteration. This occurs before the next evaluation of condition. Generally used to update or increment the counter variable.” - MDN
   * **statement:** “A statement that is executed as long as the condition evaluates to true. To execute multiple statements within the loop, use a block statement ({ ... }) to group those statements.” - MDN
+* **Arrays:** "JavaScript arrays are used to store multiple values in a single variable." - W3Schools 
