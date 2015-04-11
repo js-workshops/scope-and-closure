@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>InstaSearch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+                <img alt="Brand" src="img/instagram-icon.jpg">
+                InstaSearch
+              </a>
+            </div>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="#tags">
+              </div>
+              <button type="submit" class="btn btn-default">Search</button>
+            </form>
+          </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+            <!-- Search Results Container -->
+            <div class="row" id="searchResults">
+
+            </div>
+            <!-- /#searchResults -->
+        </div>
+        <!-- /.container -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/instasearch.js"></script>
+        <script src="js/instasearch.view.js"></script>
+    </body>
+</html>
