@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lab</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- add Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/global.css">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1 id="message">Lab: InstaSearch</h1>
+                    <p class="lead"><strong>Phase 1:</strong> Using our knowledge of scope, let's write a templating function with the sample object provided.</p>
+                </div>
+                <div class="col-lg-12">
+                    <p><a type="button" class="btn btn-primary btn-lg" href="project/instasearch.html" target="_blank">InstaSearch</a></p>
+                    <h3>HTML Tempalte:</h3>
+                    <pre>
+&lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+    &lt;div class=&quot;thumbnail&quot;&gt;
+        &lt;img src=&quot;&lt;IMAGE URL&gt;&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                    <br /><br />
+                    
+                    <ol>
+                        <li>Open <kbd>project/instasearch.html</kbd> and <kbd>project/js/instasearch.view.js</kbd> in Sublime Text.</li>
+                        <li>Add a function named <code>imageTemplate</code> on line 28 of <kbd>project/js/instasearch.view.js</kbd>.
+                            <ul>
+                                <li>The function should accept one parameter - an object that contains the image information.</li>
+                                <li>There is an example image object that we will pass to our <code>imageTemplate</code> function in the JavaScript file.</li>
+                            </ul>
+                        </li>
+                        <li>Create a variable and assign it the <var>url</var> of the <var>standard_resolution</var> version of our image.</li>
+                        <li>Contstruct another variable that will hold all the HTML that <code>imageTemplate</code> will return. See the example HTML Template above.</li>
+                        <li>Make sure that you replace <var>&lt;IMAGE URL&gt;</var> with the url variable we created.</li>
+                        <li>At the end of our <code>imageTemplate</code> function, return that variable that holds our final HTML:
+                        <pre>return variableName;</pre>
+                        </li>
+                        <li>Test our function by calling it at the bottom of our JavaScript file. Pass it our sample image object, and log the result:
+                        <pre>console.log(imageTemplate(sampleImage));</pre>
+                    </ol>
+
+                    <br />
+                    <h3>Hints:</h3>
+                    <ul>
+                        <li>You can combine two strings with the concatenation operator (<code>+</code>):
+                        <pre>var result = "string 1" + variableString;</pre>
+                        </li>
+                        <li>You can navigate through an object using the dot syntax:
+                        <pre>grandfatherObject.parentObject.childObject.variable</pre>
+                        </li>
+                        <li>Add a debugger statement or breakpoint in console inside the <code>instasearch.view</code> function, and test navigating the <code>sampleImage</code> object:
+                        <pre>sampleImage.thumbnail.height</pre>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 text-center footer">
+                    <ul class="list-unstyled">
+                        <li><a href="001.4-scope.html"><< Prev</a> | <a href="003.1-closure.html">Next >></a></li>
+                        <li>Intermediate JavaScript & jQuery - <a href="https://twitter.com/ev_blurbs">Evan Johnson</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container -->
+    </body>
+</html>
