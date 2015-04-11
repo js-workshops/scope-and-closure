@@ -27,7 +27,7 @@
     console.log(sampleImage);
 
     // Add your imageTemplate() function here
-    var imageTemplate = function(imagesObject) {
+    function imageTemplate(imagesObject) {
       var imageUrl = imagesObject.images.standard_resolution.url; // store the image url
       var resultHTML = '<div class="col-sm-6 col-md-4">';         // opening parent DIV
       resultHTML += '<div class="thumbnail">';                    // opening img wrapper
@@ -37,7 +37,7 @@
       resultHTML += '</div>';                                     // closing img wrapper
       resultHTML += '</div>';                                     // closing parent DIV
       return resultHTML;
-    };
+    }
 
     // Call function here
     console.log(imageTemplate(sampleImage));

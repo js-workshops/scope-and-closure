@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h1 id="message">Lab: InstaSearch</h1>
-                    <p class="lead"><strong>Phase 2:</strong> Let's loop through an array of objects, and call our <code>imageTemplate</code> function with each object.</p>
+                    <p class="lead"><strong>Phase 2:</strong> Let's loop through an array, and call our <code>imageTemplate</code> function with each value.</p>
                 </div>
                 <div class="col-lg-12">
                     <p><a type="button" class="btn btn-primary btn-lg" href="project/instasearch.html" target="_blank">InstaSearch</a><a type="button" class="btn btn-default btn-lg" href="_final-files/project/01.zip">Starter Code</a></p>
@@ -54,18 +54,20 @@
                                 <li>The text block above is a minified version of a JavaScript Array. Don't worry if the formatting is hard to understand.</li>
                             </ul>
                         </li>
-                        <li>Add a function named <code>resultsTemplate</code> to <kbd>project/js/instasearch.view.js</kbd>.
+                        <li>Add a function named <code>formatResults</code> to <kbd>project/js/instasearch.view.js</kbd>.
                             <ul>
                                 <li>Don't worry about Closure at this point - put it at the same level/scope as <code>imageTemplate</code>.</li>
-                                <li><code>resultsTemplate</code> function will accept one parameter (the Array of objects - <code>sampleArray</code>).</li>
+                                <li><code>formatResults</code> function will accept one parameter (the Array of objects - <code>sampleArray</code>).</li>
+                                <li>Don't store your function as a variable - just declare it directly:
+                                <pre>function formatResults(dataArray) {}</pre></li>
                             </ul>
                         </li>
-                        <li>Inside the Scope of <code>resultsTemplate</code>, create a variable named <code>resultsHTML</code> and assign it the value of an empty string (<var>''</var>).</li>
+                        <li>Inside the Scope of <code>formatResults</code>, create a variable named <code>resultsHTML</code> and assign it the value of an empty string (<var>''</var>).</li>
                         <li>Loop through the Array stored under your parameter name. For each iteration of your loop, append more results to the <code>resultsHTML</code> variable by calling the <code>imageTemplate</code> function with each Array value:
                         <pre>resultsHTML += imageTemplate(arrayName[i]);</pre></li>
-                        <li>Return the <code>resultsHMTL</code> variable at the end of your <code>resultsTemplate</code> function.</li>
-                        <li>At the bottom of the <code>instasearch.view</code> function, store the result of the <code>resultsTemplate</code> in a variable:
-                        <pre>var results = resultsTemplate(sampleArray);</pre></li>
+                        <li>Return the <code>resultsHMTL</code> variable at the end of your <code>formatResults</code> function.</li>
+                        <li>At the bottom of the <code>instasearch.view</code> function, store the result of the <code>formatResults</code> in a variable:
+                        <pre>var results = formatResults(sampleArray);</pre></li>
                         <li>Find the container for the results in <kbd>project/instasearch.html</kbd>. Select it with jQuery, and then insert the results using the jQuery function <code>html()</code>.</li>
                     </ol>
 
@@ -84,7 +86,7 @@
                 </div>
                 <div class="col-lg-12 text-center footer">
                     <ul class="list-unstyled">
-                        <li><a href="001.4-scope.html"><< Prev</a> | <a href="003.1-closure.html">Next >></a></li>
+                        <li><a href="005-arrays.html"><< Prev</a> | <a href="003.1-closure.html">Next >></a></li>
                         <li>Intermediate JavaScript & jQuery - <a href="https://twitter.com/ev_blurbs">Evan Johnson</a></li>
                     </ul>
                 </div>
