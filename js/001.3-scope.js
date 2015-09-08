@@ -1,5 +1,5 @@
 // declare a global variable
-var name;
+name = undefined;
 
 var workshop = {
   setWorkshopName: function(workshopName) {
