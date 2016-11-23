@@ -24,12 +24,20 @@
                 InstaSearch
               </a>
             </div>
-            <form class="navbar-form navbar-right" id="searchForm" role="search">
-              <div class="form-group">
-                <input type="text" id="searchField" class="form-control" placeholder="#tags">
-              </div>
-              <button type="submit" class="btn btn-default">Search</button>
-            </form>
+            <div class="hide" id="searchContainer">
+                <form class="navbar-form navbar-right" id="searchForm" role="search">
+                  <div class="form-group">
+                    <input type="text" id="searchField" class="form-control" placeholder="#tags">
+                  </div>
+                  <button type="submit" class="btn btn-default">Search</button>
+                </form>
+            </div>
+            <div id="loginContainer">
+
+                <form class="navbar-form navbar-right" id="loginForm" action="https://api.instagram.com/oauth/authorize/?client_id=84aac77556e5455483fa10c7c71002b1&redirect_uri=http://localhost:8000/&response_type=token" method="get">
+                    <a href="https://api.instagram.com/oauth/authorize/?client_id=84aac77556e5455483fa10c7c71002b1&redirect_uri=http://localhost:8000/&response_type=token" class="btn btn-default">Login</a>
+                </form>
+            </div>
           </div>
         </nav>
 

@@ -3,16 +3,14 @@
 
     function formatResults(dataArray) {
       var resultHTML = '';
-      
+
       // Add your imageTemplate() function here
-      function imageTemplate(imagesObject) {
-        var imageUrl = imagesObject.images.standard_resolution.url; // store the image url
-        var resultHTML = '<div class="col-sm-6 col-md-4">';         // opening parent DIV
-        resultHTML += '<div class="thumbnail">';                    // opening img wrapper
+      function imageTemplate(tweet) {
+        var resultHTML = '<div class="card">';                      // opening parent DIV
         resultHTML += '<img src="';                                 // opening img tag
-        resultHTML += imageUrl;                                     // image url
+        resultHTML += tweet.image;                                  // image url
+        resultHTML += '" class="card-img-top img-fluid"'
         resultHTML += '">';                                         // closing img tag
-        resultHTML += '</div>';                                     // closing img wrapper
         resultHTML += '</div>';                                     // closing parent DIV
         return resultHTML;
       }

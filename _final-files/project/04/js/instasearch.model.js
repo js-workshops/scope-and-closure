@@ -3,6 +3,7 @@
 
     function handleResults(dataArray) {
       // hook it up to our view function
+      console.log('dataArray', dataArray);
       instasearch.view(dataArray);
     }
 
@@ -11,20 +12,20 @@
       var url = instagramEndpoint();
       // add the AJAX get method here - $.get()
       $.get(url, function(json) {
+        console.log('json', json);
           handleResults(json.data);
       }, "jsonp");
 
       // a function to get our API endpoint
       function instagramEndpoint() {
-        var endpoint = "https://api.instagram.com/v1/tags/";
+        var endpoint = "https://twitter-proxy-server.herokuapp.com/?searchTerm=";
         endpoint += tag;
-        endpoint += "/media/recent?client_id=b6273526183447349d1579975819bea5";
         return endpoint;
       }
     }
 
     // add your test search here
     fetchData(tag);
-    
+
   };
 })();
