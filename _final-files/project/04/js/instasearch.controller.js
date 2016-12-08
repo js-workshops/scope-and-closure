@@ -1,12 +1,14 @@
 (function instaSearchController() {
   instasearch.controller = function() {
-    // bind click event to #searchButton. 
+    // bind click event to #searchButton.
     // Check if #searchField has a value
     // before initiating the search
     $("#searchForm").submit(function(e) {
       e.preventDefault();
       var searchTerm = $("#searchField").val();
       if(searchTerm.length) {
+        console.log('dog');
+        console.log(searchTerm);
         instasearch.model(searchTerm);
       }
     });

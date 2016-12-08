@@ -25,27 +25,26 @@
                     <p class="lead"><strong>Phase 1:</strong> Using our knowledge of scope, let's write a templating function with the sample object provided.</p>
                 </div>
                 <div class="col-lg-12">
-                    <p><a type="button" class="btn btn-primary btn-lg" href="project/instasearch.html" target="_blank">InstaSearch</a></p>
+                    <p><a type="button" class="btn btn-primary btn-lg" href="project/index.html" target="_blank">InstaSearch</a></p>
                     <h3>HTML Tempalte:</h3>
                     <pre>
 &lt;div class=&quot;card&quot;&gt;
-    &lt;img class=&quot;thumbnail&quot;&gt;
-        &lt;img src=&quot;&lt;IMAGE URL&gt;&quot;&gt;
-    &lt;/div&gt;
+    &lt;img class=&quot;card-img-top img-fluid&quot; src=&quot;&lt;IMAGE URL&gt;&quot /&gt;
 &lt;/div&gt;</pre>
                     <br /><br />
 
                     <ol>
-                        <li>Open <kbd>project/instasearch.html</kbd> and <kbd>project/js/instasearch.view.js</kbd> in Sublime Text.</li>
+                        <li>Open <kbd>project/index.html</kbd> and <kbd>project/js/instasearch.view.js</kbd> in Sublime Text.</li>
                         <li>Add a function named <code>imageTemplate</code> on line 28 of <kbd>project/js/instasearch.view.js</kbd>.
                             <ul>
                                 <li>The function should accept one parameter - an object that contains the image information.</li>
-                                <li>There is an example image object that we will pass to our <code>imageTemplate</code> function in the JavaScript file.</li>
+                                <li>There is an example Tweet (i.e. <code>sampleTweet</code>) that we will pass to our <code>imageTemplate</code> function in the JavaScript file.</li>
+                                <li>Don't store your function as a variable - just declare it directly:
+                                <pre>function imageTemplate(sampleTweet) {}</pre></li>
                             </ul>
                         </li>
-                        <li>Create a variable and assign it the <var>url</var> of the <var>standard_resolution</var> version of our image.</li>
                         <li>Contstruct another variable that will hold all the HTML that <code>imageTemplate</code> will return. See the example HTML Template above.</li>
-                        <li>Make sure that you replace <var>&lt;IMAGE URL&gt;</var> with the url variable we created.</li>
+                        <li>Make sure that you replace <var>&lt;IMAGE URL&gt;</var> with the image variable on the sampleImage Object.</li>
                         <li>At the end of our <code>imageTemplate</code> function, return that variable that holds our final HTML:
                         <pre>return variableName;</pre>
                         </li>

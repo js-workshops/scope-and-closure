@@ -1,6 +1,8 @@
 (function instaSearchModel() {
   instasearch.model = function(tag) {
-
+    if (!tag) {
+      tag = '';
+    }
     function handleResults(dataArray) {
       // hook it up to our view function
 
