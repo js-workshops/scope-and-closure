@@ -11,7 +11,7 @@ function init() {
 
     // add a function to log the name variable
     // invoke that function inside displayName()
-    
+
   }
   displayName();
 }

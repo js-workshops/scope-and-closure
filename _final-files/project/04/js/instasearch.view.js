@@ -10,7 +10,7 @@
         resultHTML += '<img src="';                                 // opening img tag
         resultHTML += tweet.image;                                  // image url
         resultHTML += '" class="card-img-top img-fluid"'
-        resultHTML += '">';                                         // closing img tag
+        resultHTML += '/>';                                         // closing img tag
         resultHTML += '</div>';                                     // closing parent DIV
         return resultHTML;
       }

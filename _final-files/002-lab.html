@@ -28,13 +28,13 @@
                     <p><a type="button" class="btn btn-primary btn-lg" href="project/instasearch.html" target="_blank">InstaSearch</a></p>
                     <h3>HTML Tempalte:</h3>
                     <pre>
-&lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
-    &lt;div class=&quot;thumbnail&quot;&gt;
+&lt;div class=&quot;card&quot;&gt;
+    &lt;img class=&quot;thumbnail&quot;&gt;
         &lt;img src=&quot;&lt;IMAGE URL&gt;&quot;&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
                     <br /><br />
-                    
+
                     <ol>
                         <li>Open <kbd>project/instasearch.html</kbd> and <kbd>project/js/instasearch.view.js</kbd> in Sublime Text.</li>
                         <li>Add a function named <code>imageTemplate</code> on line 28 of <kbd>project/js/instasearch.view.js</kbd>.
@@ -58,9 +58,6 @@
                     <ul>
                         <li>You can combine two strings with the concatenation operator (<code>+</code>):
                         <pre>var result = "string 1" + variableString;</pre>
-                        </li>
-                        <li>You can navigate through an object using the dot syntax:
-                        <pre>grandfatherObject.parentObject.childObject.variable</pre>
                         </li>
                         <li>Add a debugger statement or breakpoint in console inside the <code>instasearch.view</code> function, and test navigating the <code>sampleImage</code> object:
                         <pre>sampleImage.thumbnail.height</pre>
