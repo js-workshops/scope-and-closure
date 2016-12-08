@@ -13,15 +13,14 @@
 
       // a function to get our API endpoint
       function instagramEndpoint() {
-        var endpoint = "https://api.instagram.com/v1/tags/";
+        var endpoint = "https://twitter-proxy-server.herokuapp.com/?searchTerm=";
         endpoint += tag;
-        endpoint += "/media/recent?client_id=b6273526183447349d1579975819bea5";
         return endpoint;
       }
     }
 
     // add your test search here
-    
+
   };
 
   instasearch.model();

@@ -10,22 +10,21 @@
       // create a url variable, and assign it to the result of instagramEndpoint()
       var url = instagramEndpoint();
       // add the AJAX get method here - $.get()
-      $.get(url, function(json) {
-          handleResults(json.data);
+      $.get(url, function(jsonData) {
+        // do something with our
+        // our jsonData here
+        handleResults(jsonData.data);
       }, "jsonp");
-
       // a function to get our API endpoint
       function instagramEndpoint() {
-        var endpoint = "https://api.instagram.com/v1/tags/";
+        var endpoint = "https://twitter-proxy-server.herokuapp.com/?searchTerm=";
         endpoint += tag;
-        endpoint += "/media/recent?client_id=b6273526183447349d1579975819bea5";
         return endpoint;
       }
     }
 
     // add your test search here
-    fetchData('puppy');
-    
+    fetchData('seattle');
   };
 
   instasearch.model();
